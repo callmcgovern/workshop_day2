@@ -1,13 +1,24 @@
+For prog bootcamp: 
+
+1. Take some time to get to know your data.
+	   
+2. Count how many fasta files (DNA seqs from different organisms) you have in each file. 
+
+3. Combine all of the sequences into one large fasta file
+
+4. Make a subdirectory in the parent directory called “raw data”
+
+5. Move your original fasts into the raw data folder (do this so you keep raw data safe while running other commands)
+
+6. Use the combined fasta file to grab only the headers of each fasta into a file that will be a list of the fasta headers (names). Name this file “headers.txt”
+
+7. Now, count how many sequences made it into your combined fasta to make sure all the sequences did in fact get added. (You should get the same # you got in part 2) 
+- Add this count to the headers.txt file. Make sure you dont wipe all the headers out of that file. 
+
+8. Go to this website https://www.genome.jp/tools-bin/mafft
+ Use the alignment tool to align your fasta files (the all_seqs file) and generate a phylogenetic tree. 
 
 
-1. Make a subdirectory in each directory of sequences called outputs \
+Challenge: 
+Use the challenge seqs folder and from that parent directory use one bash script to go into each subfolder and extract the # of fastas in each file in each folder. Then save the output from each into a file in the parent directory. (Hint - use a for loop). 
 
-2. Combine all of the fasta files from each folder into one large fasta file per folder.\
-
-3. Once you have done that, remove all of the individual seqs so that your folders only have two things in them.\
-
-4. Count how many seqs you have in each of your big fasta files\
-
-5. Count how many times 
-
-Challenge: With one command, start in the parent directory (day2) and go into each folder and count in each of the files then save this into an output file called caca_count.\
